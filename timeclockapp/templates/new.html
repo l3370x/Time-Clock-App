@@ -1,0 +1,8 @@
+<div class=rightPage>
+<br>
+New User
+
+<form action="/new/" method="post">{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Submit" />
+</form>

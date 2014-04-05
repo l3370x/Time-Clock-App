@@ -1,0 +1,16 @@
+hello {{ theuser }}
+
+{% if clockedin %}
+You are clocked in.
+<form action="/clockout">
+<input type="submit" value="clock out" />
+</form>
+{% else %}
+you are clocked out.
+<form action="/clockin">
+<input type="submit" value="clock in" />
+</form>
+{% endif %}
+
+total time this week:
+{{ total_time }}

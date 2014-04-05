@@ -2,3 +2,6 @@ venv
 *.pyc
 staticfiles
 *~
+.project
+.pydevproject
+db.sqlite3
